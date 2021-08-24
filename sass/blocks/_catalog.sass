@@ -1,0 +1,124 @@
+.catalog
+    padding-bottom: 100px
+    &__tabs
+        margin-top: 70px
+        list-style-type: none
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-bottom: 0
+        padding-left: 0
+    &__tab
+        border-width: 2px
+        border-color: rgb(208, 208, 208)
+        border-style: solid
+        width: 220px
+        height: 50px
+        font-size: 18px
+        font-weight: 500
+        color: rgb(107, 107, 107)
+        text-transform: uppercase
+        text-align: center
+        line-height: 48px
+        transform: skewX(-25deg)
+        margin: 0 5px
+        cursor: pointer
+        transition: 0.4s all
+        &:hover
+            box-shadow: 3px 3px 20px $main_red
+            border: none
+        div
+            transform: skewX(25deg)
+        &_active
+            color: #fff
+            background-color: $main_red
+            border: none
+    &__content
+        margin-top: 60px
+        display: flex
+    &-item
+        width: 300px
+        min-height: 440px
+        border-width: 2px
+        border-color: rgb(232, 232, 232)
+        border-style: solid
+        padding: 20px 20px 26px 20px
+        &__img
+            display: block
+            margin: 0 auto
+            max-width: 100%
+            height: 200px
+        &__subtitle
+            margin-top: 20px
+            font-size: 16px
+            line-height: 16px
+            font-weight: 700
+            color: rgb(13, 13, 13)
+            text-align: center
+        &__descr
+            margin-top: 16px
+            text-align: center
+            font-weight: 300
+            line-height: 15px
+            font-size: 14px
+            color: rgb(13, 13, 13)
+        &__link
+            color: $main_red
+            margin-top: 17px
+            display: block
+            line-height: 12px
+            font-size: 14px
+            font-weight: 500
+            color: $main_red
+            text-decoration: underline
+            text-align: center
+            &:hover
+                color: $main_red
+        hr
+            background-color: rgb(232, 232, 232)
+            margin-top: 19px
+            margin-bottom: 21px
+        &__footer
+            display: flex
+            justify-content: space-between
+            align-items: center
+        &__old-price
+            font-size: 14px
+            font-weight: 300
+            color: rgb(85, 85, 85)
+            text-decoration: line-through
+        &__price
+            font-size: 20px
+            font-weight: 700
+            color: rgb(5, 5, 5)
+        &__wrapper
+            display: flex
+            width: calc(200% + 40px)
+        &__content
+            width: 50%
+            margin-right: 0
+            transform: translateX(-100%)
+            transition: 0.5s all
+            &_active
+                transform: translateX(0%)
+                margin-right: 20px
+        &__list
+            width: 50%
+            margin-left: 20px
+            transform: translateX(0%)
+            padding-right: 20px
+            transition: 0.5s all
+            padding-left: 0
+            margin-bottom: 0
+            list-style-type: none
+            &_active
+                transform: translateX(100%)
+                margin-left: 0
+
+  
+
+
+
+
+
+  
